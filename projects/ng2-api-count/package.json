@@ -4,5 +4,15 @@
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
-  }
+  },
+  "contributors": [
+    "John Jayasingh"
+  ],
+  "homepage": "https://github.com/johnjayasingh/ng2-api-counter",
+  "displayName": "Ng2 API Counter",
+  "author": {
+    "name": "John Jayasingh",
+    "email": "johnjayasingh.s@gmail.com",
+    "url": "https://github.com/johnjayasingh"
+  },
 }

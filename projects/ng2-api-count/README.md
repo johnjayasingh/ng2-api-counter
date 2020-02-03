@@ -1,24 +1,45 @@
-# Ng2ApiCount
+# Ng2ApiCounter
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+You can use the Loader Service to get count of all ongoing api with this simple add on package.
 
-## Code scaffolding
+#### In component
+`
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { LoaderService } from 'ng2-api-count';
 
-Run `ng generate component component-name --project ng2-api-count` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng2-api-count`.
-> Note: Don't forget to add `--project ng2-api-count` or else it will be added to the default project in your `angular.json` file. 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  constructor(private httpClient: HttpClient, private _loaderService: LoaderService) {
+  }
 
-## Build
+`
 
-Run `ng build ng2-api-count` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### In App module provide the ApiCounterModule
+`import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-## Publishing
+import { AppComponent } from './app.component';
+import { ApiCountModule } from 'ng2-api-count';
+import { HttpClientModule } from '@angular/common/http';
 
-After building your library with `ng build ng2-api-count`, go to the dist folder `cd dist/ng2-api-count` and run `npm publish`.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    ApiCountModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+`
 
-## Running unit tests
-
-Run `ng test ng2-api-count` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##### Feel free to ask any doubts if you have any
