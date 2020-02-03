@@ -1,6 +1,5 @@
 import { Injectable, Injector } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams, HttpRequest, HttpHandler, HttpEvent, HttpResponse, HttpErrorResponse, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { HttpRequest, HttpHandler, HttpEvent, HttpResponse, HttpErrorResponse, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError, timeout } from 'rxjs/operators';
 import { LoaderService } from './loader.service';
@@ -10,7 +9,7 @@ import { LoaderService } from './loader.service';
 })
 
 export class ApiCountInterceptor {
-    constructor(private router: Router, private injector: Injector) {
+    constructor(private injector: Injector) {
 
     }
 
