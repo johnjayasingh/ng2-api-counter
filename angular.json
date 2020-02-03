@@ -120,6 +120,76 @@
           }
         }
       }
+    },
+    "progress": {
+      "projectType": "library",
+      "root": "projects/progress",
+      "sourceRoot": "projects/progress/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/progress/tsconfig.lib.json",
+            "project": "projects/progress/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/progress/src/test.ts",
+            "tsConfig": "projects/progress/tsconfig.spec.json",
+            "karmaConfig": "projects/progress/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/progress/tsconfig.lib.json",
+              "projects/progress/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "api-count": {
+      "projectType": "library",
+      "root": "projects/api-count",
+      "sourceRoot": "projects/api-count/src",
+      "prefix": "ng2",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/api-count/tsconfig.lib.json",
+            "project": "projects/api-count/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/api-count/src/test.ts",
+            "tsConfig": "projects/api-count/tsconfig.spec.json",
+            "karmaConfig": "projects/api-count/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/api-count/tsconfig.lib.json",
+              "projects/api-count/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng2-api-counter"
 }

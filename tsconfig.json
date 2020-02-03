@@ -17,7 +17,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "progress": [
+        "dist/progress"
+      ],
+      "progress/*": [
+        "dist/progress/*"
+      ],
+      "api-count": [
+        "dist/api-count"
+      ],
+      "api-count/*": [
+        "dist/api-count/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
