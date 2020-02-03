@@ -30,6 +30,12 @@
       ],
       "api-count/*": [
         "dist/api-count/*"
+      ],
+      "ng2-api-count": [
+        "dist/ng2-api-count"
+      ],
+      "ng2-api-count/*": [
+        "dist/ng2-api-count/*"
       ]
     }
   },
