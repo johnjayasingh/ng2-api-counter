@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { LoaderService } from 'projects/api-count/src/lib/loader.service';
+import { LoaderService } from 'api-count';
 
 @Component({
   selector: 'app-root',

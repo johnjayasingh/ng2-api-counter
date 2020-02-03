@@ -6,7 +6,7 @@ You can use the Loader Service to get count of all ongoing api with this simple 
 `
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { LoaderService } from 'projects/api-count/src/lib/loader.service';
+import { LoaderService } from 'api-count';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ApiCountModule } from 'projects/api-count/src/public-api';
+import { ApiCountModule } from 'api-count';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
