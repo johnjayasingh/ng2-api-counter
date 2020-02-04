@@ -1,12 +1,26 @@
 {
   "name": "ng2-api-count",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
   },
   "contributors": [
     "John Jayasingh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johnjayasingh/ng2-api-counter.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "ng2-api-count",
+    "ng2-api",
+    "ng2-http",
+    "ng2-api-count",
+    "count api",
+    "http interceptor"
   ],
   "homepage": "https://github.com/johnjayasingh/ng2-api-counter",
   "displayName": "Ng2 API Counter",
