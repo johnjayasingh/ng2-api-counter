@@ -2,6 +2,9 @@
 
 You can use the Loader Service to get count of all ongoing api with this simple add on package.
 
+# Example
+
+Please checkout the src folder `src/app/app.module.ts` and `src/app/app.component.ts` to find actual implementation of the `ng2-api-count`
 
 ## Quick start
 
